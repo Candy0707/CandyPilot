@@ -174,6 +174,13 @@ public:
     QObject::connect(&toggle, &ToggleSP::stateChanged, this, &ToggleControlSP::toggleFlipped);
   }
 
+  void setBool(bool State) {
+    if (State != toggle.on) {
+      toggle.togglePosition();
+      emit toggleFlipped(State);
+    }
+  }
+
   void setEnabled(bool enabled) {
     toggle.setEnabled(enabled);
     toggle.update();

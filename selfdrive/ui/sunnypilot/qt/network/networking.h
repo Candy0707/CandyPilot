@@ -14,4 +14,6 @@ class NetworkingSP : public Networking {
 
 public:
     explicit NetworkingSP(QWidget *parent = nullptr);
+private:
+    ToggleControl* tetheringToggle;
 };
