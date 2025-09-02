@@ -5,9 +5,9 @@
 TurnSignalWidget::TurnSignalWidget(QWidget *parent) : QObject(parent)
 {
   y = 140;
-  size = 120;
-  arrowSize = 60;
-  distance = 200;
+  size = 140;
+  arrowSize = 80;
+  distance = 260;
 }
 
 void TurnSignalWidget::updateState(const UIState &s)
